@@ -1,0 +1,244 @@
+
+.trailercont {
+  width: 1000px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.trailers {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  gap: 10px
+}
+.trailercont h2 {
+  color: #fff;
+  margin: 50px 0
+}
+.othertrailers {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  max-width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  overflow-y: auto
+
+}
+.trailercont .othertrailers  iframe {
+  height: 100%;
+  border-radius: 5px
+}
+.trailercont iframe, .trailercont .firsttrailer {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px
+}
+.circle {
+  width: 50px;
+  height: 50px;
+}
+.circle .CircularProgressbar .CircularProgressbar-text {
+  font-size: 25px;
+  user-select: none;
+  font-weight: bold
+}
+.leftpartmovie .moredetails  {
+  justify-content: flex-start
+}
+.moredetails  span:nth-last-of-type(2)::after, .moredetails  span:nth-last-of-type(2)::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -12px;
+  border-radius: 50%
+}
+.moredetails  span:nth-last-of-type(2)::before {
+  left: -12px;
+  right: initial
+}
+.upperleftpart {
+  gap: 20px;
+  display: flex;
+  flex-direction: column
+}
+.leftpartmovie  {
+  flex-direction: column;
+  color: #fff;
+  gap: 20px;
+  margin-top: 20px
+}
+.midpart {
+  display: flex;
+  font-size: 12px;
+  gap: 20px;
+  align-items: center;
+}
+.midpart i {
+  font-size: 15px;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  background-color: var(--theme-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%
+}
+.midpart i:hover {
+  color: var(--theme-color);
+  background-color: #fff
+}
+.midpart > div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center
+}
+.moviedetails {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.mainbgimgdetail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.mainbgimgdetail img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(65%)
+}
+.innermoviedetails  {
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 30px;
+  margin: 0 auto;
+}
+.imgpart {
+  width: 300px;
+  height: 90%;
+}
+.imgpart img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  border-radius: 5px
+}
+.upperleftpart span {
+  font-size: 12px;
+}
+.moredetails  {
+  gap: 20px;
+  flex-wrap: wrap
+}
+.leftpartmovie  {
+   max-width: 400px;
+}
+.movieperson {
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  color: #fff;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  font-size: 12px;
+}
+.personimg {
+  height: 180px;
+  width: 150px
+}
+.personimg img {
+  width: 100%;
+  height: 100%
+}
+.personimg .imgskeltonload  {
+  border-radius: 5px
+}
+.persondetail {
+  padding: 15px;
+
+}
+.episodesrow {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+.episodeprev {
+  display: flex;
+  flex-direction: column;
+}
+.episodeprev small {
+  padding-left: 25px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--gray-text)
+}
+.seasonsrow {
+  flex-direction: column;
+  display: flex;
+  gap: 25px
+}
+.episodeprev a {
+  color: #fff
+}
+.episodeprev a:hover {
+  text-decoration: underline
+}
+.num {
+  margin-right: 5px;
+}
+.trailers > div:first-of-type {
+  width: 100%
+}
+
+@media (max-width: 720px) {
+
+  .moviedetails {
+    justify-content: center
+  }
+  .innermoviedetails  {
+    flex-direction: column;
+
+  }
+  .imgpart {
+    display: none
+  }
+  .imgpart img {
+    filter: brightness(50%);
+    height: 100%;
+  }
+  .trailers {
+    flex-direction: column;
+    height: auto
+  }
+
+  .trailers  .firsttrailer{
+    height: 400px
+  }
+  .othertrailers {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+  }
+  .trailercont .othertrailers iframe {
+    width: 200px;
+    height: 100%;
+  }
+  .tablink {
+    font-size: 11px
+  }
+  
+}

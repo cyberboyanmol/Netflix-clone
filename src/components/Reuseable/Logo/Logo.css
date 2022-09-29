@@ -1,0 +1,23 @@
+.svg-icon-netflix-logo {
+  width: 10rem;
+  height: 2.8rem;
+  fill: #e50914;
+  /* for mobile devices size need to reduce  */
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  font-size: 25px;
+  color: #e50914;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 7rem;
+  }
+}

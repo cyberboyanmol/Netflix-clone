@@ -1,0 +1,19 @@
+.animation-card.watchOnDevice .our-story-card-img, .animation-card.watchOnTv .our-story-card-img {
+  position: relative;
+  z-index: 2;
+}
+.animation-card.watchOnTv .our-story-card-animation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 46%;
+  left: 50%
+}
+.animation-card.watchOnDevice .our-story-card-video, .animation-card.watchOnTv .our-story-card-video {
+  width: 100%;
+  height: 100%;
+}
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline
+}

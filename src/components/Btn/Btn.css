@@ -1,0 +1,11 @@
+.themebtn {
+  padding: 10px;
+  background-color: var(--red);
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.themebtn i {
+  color: #fff;
+  margin-left: 10px;
+}

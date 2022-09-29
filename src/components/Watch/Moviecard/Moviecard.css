@@ -1,0 +1,138 @@
+.moviecard {
+  overflow: hidden;
+  border-radius: 5px;
+  height: 165px;
+  min-width: 250px
+}
+.movieimgvid {
+  width: 250px;
+  height: 165px;
+}
+.moviecard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.movielist h2 {
+  margin-bottom: 20px;
+  color: #fff
+}
+.movielist .innermovielist {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.innermovielist::-webkit-scrollbar {
+  height: 0;
+}
+.moviecard iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.moviecard i {
+  color: rgb(216, 216, 216);
+  width: 24px;
+  height: 24px;
+  border: solid 2px rgb(216, 216, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px
+}
+.moviecard i:hover {
+  color: #fff;
+  border: solid 2px #fff
+}
+
+.moviecardcontrols {
+  margin-top: 10px;
+  opacity: 1;
+  max-height: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+.btmsect {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 10px;
+}
+.btmsect .flex {
+  align-items: center
+}
+.btmsect .green {
+  color: var(--green)
+}
+.moviecard .fa-play {
+  background-color: #fff;
+  color: #000;
+}
+.moviecard .fa-play:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.836)
+}
+.boxed {
+  border: solid 1px #fff;
+  padding: 3px
+}
+.uppersect  {
+  justify-content: space-between
+}
+.moviecard .flex {
+  gap: 15px
+}
+.btmsect .flex {
+
+}
+.genres  {
+  gap: 15px;
+  font-size: 10px
+}
+.genres span:nth-of-type(even)::after, .genres span:nth-of-type(even)::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  display: block;
+  background-color: #ddd;
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%);
+  border-radius: 50%
+}
+.genres span:nth-of-type(even)::before {
+  right: -8px;
+  left: initial
+}
+.moviecard:hover {
+  overflow: initial;
+  box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.65);
+  transform: scale(1.3);
+  height: auto;
+  z-index: 10;
+}
+.moviecard:hover iframe {
+  opacity: 1;
+  width: 100%
+}
+.moviecard:hover .moviecardcontrols {
+  max-height: 500px;
+  opacity: 1;
+}
+.moviecard {
+  background-color: #141414;
+  margin: 0 10px
+}

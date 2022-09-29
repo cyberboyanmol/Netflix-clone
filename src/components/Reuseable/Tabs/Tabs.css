@@ -1,0 +1,56 @@
+.tabs .tablinks {
+  color: #fff;
+  justify-content: flex-start
+}
+.tablinks div {
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.3s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #333
+}
+.tablinks .activetablink, .tablinks div:hover {
+  background-color: var(--theme-color);
+}
+.tabs {
+  flex-direction: column;
+}
+.watch .tt .tabcont  {
+  min-height: 350px;
+  padding: 0 20px
+}
+.watch  .tabcont {
+  display: flex;
+  overflow: scroll;
+  gap: 20px;
+  align-items: center;
+  padding:  20px
+}
+.tabcont::-webkit-scrollbar {
+  height: 5px
+}
+.tabcont::-webkit-scrollbar-track {
+  background-color: #141414;
+}
+.tabcont::-webkit-scrollbar-thumb {
+  background-color: var(--theme-color)
+}
+.watch .tabcont  img {
+  display: block;
+  border-radius: 5px
+}
+.hor {
+  width: 400px;
+  height: 250px
+}
+.ver {
+  height: 300px;
+  width: 180px
+}
+.logoimg {
+  width: 170px;
+  height: 100px;
+  object-fit: contain
+}

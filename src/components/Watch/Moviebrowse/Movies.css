@@ -1,0 +1,17 @@
+.movies {
+  min-height: 150vh
+}
+.watch .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 100;
+}
+.movielist.f {
+  padding-left: 10%;
+}
+.movielist {
+  transform: translateY(-50px)
+
+}

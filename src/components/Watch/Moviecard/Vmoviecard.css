@@ -1,0 +1,204 @@
+.vmoviecard, .topmoviecard {
+  border-radius: 5px;
+  height: 265px;
+  width: 180px
+}
+.topmoviecard {
+  width: auto;
+  margin: 0 15px
+}
+.topmoviecard > * {
+  width: 100%
+}
+.imgsection {
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  min-width: 200px;
+}
+.imgsection img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px
+}
+
+.topmoviecard .index {
+  font-size: 60px;
+  color: #000;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 250px;
+  align-items: center;
+  font-weight: bold;
+  -webkit-text-stroke: 6px #333;
+
+}
+.vmovieimgvid {
+  width: 100%;
+  height: 100%;
+}
+.vmoviecard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover
+}
+.vmoviecontrols {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  gap: 20px;
+  transition: all 0.3s
+}
+.vmoviecontrols i {
+  opacity: 0;
+  transform: scale(0.8)
+}
+.vmoviecard:hover .vmoviecontrols i, .imgsection:hover  .vmoviecontrols i {
+  transform: translateY(-20px) scale(1.2);
+  opacity: 1;
+}
+.vmoviecard:hover .vmoviecontrols i:nth-of-type(2), .imgsection:hover .vmoviecontrols i:nth-of-type(2) {
+  transition-delay: 0.1s
+}
+.vmoviecard:hover .vmoviecontrols i:nth-of-type(3), .imgsection:hover .vmoviecontrols i:nth-of-type(3) {
+  transition-delay: 0.12s
+}
+.movielist h2 {
+  margin-bottom: 20px;
+  color: #fff
+}
+.movielist .innermovielist {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.innermovielist::-webkit-scrollbar {
+  height: 0;
+}
+.vmoviecard iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.vmoviecontrols i {
+  color: rgb(216, 216, 216);
+  width: 24px;
+  height: 24px;
+  border: solid 2px rgb(216, 216, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px
+}
+.vmoviecontrols i:hover {
+  color: #fff;
+  border: solid 2px #fff
+}
+
+.moviecardcontrols {
+  margin-top: 10px;
+  opacity: 1;
+  max-height: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+.btmsect {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 10px;
+}
+.btmsect .flex {
+  align-items: center
+}
+.btmsect .green {
+  color: var(--green)
+}
+.vmoviecontrols .fa-play {
+  background-color: var(--theme-color);
+  color: #fff;
+  border: solid 1px transparent
+}
+.vmoviecontrols .fa-play:hover {
+  color: var(--theme-color);
+  background-color: #fff
+
+}
+.boxed {
+  border: solid 1px #fff;
+  padding: 3px
+}
+.uppersect  {
+  justify-content: space-between
+}
+.vmoviecard .flex {
+  gap: 15px
+}
+.btmsect .flex {
+
+}
+.genres  {
+  gap: 15px;
+  font-size: 10px
+}
+.genres span:nth-of-type(even)::after, .genres span:nth-of-type(even)::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  display: block;
+  background-color: #ddd;
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%);
+  border-radius: 50%
+}
+.genres span:nth-of-type(even)::before {
+  right: -8px;
+  left: initial
+}
+.vmoviecard {
+  background-color: #141414
+}
+
+/* .vmoviecard:hover {
+  overflow: initial;
+  box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.65);
+  transform: scale(1.3);
+  height: auto;
+  z-index: 10;
+} */
+.vmoviecard:hover iframe {
+  opacity: 1;
+  width: 100%
+}
+.vmoviecard:hover .moviecardcontrols {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.menu-wrapper > div {
+  display: flex;
+  align-items: center
+}
+.menu-item-wrapper  {
+  margin: 0 10px;
+}
+.vmoviecard .imgskeltonload  {
+  border-radius: 5px
+}

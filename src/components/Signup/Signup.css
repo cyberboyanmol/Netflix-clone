@@ -1,0 +1,174 @@
+.signupheader {
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: solid 1px #eee
+}
+.signupheader a {
+  font-weight: bold
+}
+.signupheader a:hover {
+  text-decoration: underline
+}
+.slidesign {
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+  text-align: left
+}
+.slide1 h2{ 
+  font-size: 32px;
+  text-align: center
+}
+.slide1 span {
+  align-self: center
+}
+.register .carousel .slide  {
+  margin: auto 0
+}
+.register .carousel .slidesign img {
+  width: 260px
+}
+.control-dots {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 40px
+}
+ .register .slide .slidesign .checkimg {
+  width: 50px;
+  height: 50px
+}
+.signupform {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%
+}
+.signupform .input input {
+  width: 100%;
+  padding-top: 20px
+}
+.register .carousel  {
+  padding-bottom: 60px
+}
+.benefits {
+  flex-direction: column;
+  gap: 20px;
+}
+.benefit {
+  gap: 10px;
+  align-items: center;
+}
+.benefit span, .benefit i {
+  font-size: 17px
+}
+.benefit i {
+  color: var(--red)
+}
+.slidesign  {
+  max-width: 340px;
+  margin: 40px auto;
+}
+.register .control-arrow, .register .carousel-status{
+  display: none
+}
+.benefits img, .benefits h2, .benefits > span{
+  align-self: center
+}
+.plantablebox {}
+.plantableitems {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px
+}
+.bigger {
+  max-width: 978px;
+  padding: 20px 32px 60px;
+}
+.plantable {
+  width: 100%
+}
+.tableitem {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #ccc;
+  padding-bottom: 15px;
+  color: #737373
+}
+.tableitem > span {
+  color: #000
+}
+.tableoptions  {
+  min-width: 60%;
+  justify-content: space-around
+}
+.tableoptions span {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.plantablebox  {
+  gap: 20px;
+  min-width: 60%;
+  margin-left: auto;
+  justify-content: space-around
+}
+.plantable {
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+.plantablebox  .box {
+  min-width: 120px;
+  max-width: 120px;
+  height: 120px;
+  display: flex;
+  background-color: #e50914;
+  opacity: 0.6;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer
+}
+.plantablebox .activebox {
+  opacity: 1;
+}
+.box::after {
+  content: '';
+  display: block;
+  border: 0 solid transparent;
+  border-top-color: #e50914;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-bottom-width: 0;
+  opacity: 0;
+}
+.activebox::after {
+  opacity: 1;
+}
+.activeitem {
+  color: var(--red)
+}
+.plantable button {
+  width: 350px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 0 auto
+}
+.error {
+  font-size: 10px;
+  color: var(--red)
+}

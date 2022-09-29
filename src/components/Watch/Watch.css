@@ -1,0 +1,331 @@
+.watch {
+  min-height: 100vh;
+  background-color: #141414;
+}
+.watch div::-webkit-scrollbar {
+  width: 0;
+}
+.watch .logo {
+  transform: scale(0.7);
+}
+.whowatchtop {
+  padding: 20px 40px;
+  background-color: #141414;
+}
+.profilesrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.watching {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.watching h1 {
+  margin-bottom: 12px;
+  font-size: 40px;
+  color: #fff;
+}
+.profile {
+  color: #fff;
+  cursor: pointer;
+}
+.profile:hover img {
+  border: solid 4px #fff;
+}
+.profile:hover span {
+  color: #fff;
+}
+.profile span {
+  margin-top: 10px;
+  color: #757575;
+}
+.profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+  border: solid 4px transparent;
+}
+.watch button {
+  height: 50px;
+  width: auto;
+}
+.mid button:first-of-type {
+  height: auto;
+  background-color: #333;
+  color: #fff;
+  border: solid 1px transparent;
+  cursor: auto;
+  font-weight: bold;
+}
+
+.watching button,
+.outline {
+  background-color: transparent;
+  border: solid 1px grey;
+  color: grey;
+  padding: 0.5em 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 2em 0 1em 0;
+  font-weight: bold;
+  min-width: 120px;
+}
+.watch input {
+  background-color: #666666;
+  color: #fff;
+  border-radius: 0;
+  height: 50px;
+}
+.mid {
+  align-items: flex-start;
+}
+
+.watching button:hover,
+.outline:hover {
+  color: #fff;
+  border: solid 1px #fff;
+}
+.watching .editingbtn {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  height: 50px;
+  min-width: 130px;
+  font-size: 23px;
+}
+.watching .editingbtn:hover {
+  background-color: var(--theme-color);
+  border: solid 1px transparent;
+}
+.profile i,
+.leftitem div i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px #fff;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.leftitem div i {
+  left: 20%;
+  bottom: 5%;
+  top: initial;
+}
+.editing.profile img {
+  filter: brightness(60%);
+}
+.watch .save {
+  background-color: #fff;
+  color: #000;
+}
+.watch .save:hover {
+  background-color: var(--theme-color);
+  border: solid 1px transparent;
+  color: #fff;
+}
+.editprofilemodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  background-color: #141414;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.3s;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding: 0 5%;
+}
+.activemodal {
+  pointer-events: initial;
+  transform: scale(1);
+  opacity: 1;
+}
+.editprofilemodal h1 {
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 10rem;
+  border-bottom: solid 1px #757575;
+}
+.innerprofilecont {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.leftitem img {
+  width: 150px;
+  border-radius: 5px;
+  height: 150px;
+}
+.up input {
+  width: 100%;
+}
+.editprofilemodal {
+  display: flex;
+  justify-content: center;
+}
+.modalcont {
+  width: 600px;
+  max-width: 90%;
+}
+.rightitem > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: solid 1px #757575;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.profilcontr {
+  justify-content: center;
+  padding: 0 5%;
+  gap: 20px;
+}
+.check {
+  align-items: center;
+  gap: 10px;
+}
+.avatarmodalcont {
+  width: 1000px;
+  max-width: 90%;
+  color: #fff;
+}
+.avatarmodal {
+  z-index: 900;
+}
+.leftedit {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.leftedit i {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+.rightedit {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+.rightedit img {
+  width: 80px;
+  border-radius: 5px;
+  height: 80px;
+}
+.inneravatarsrow {
+  display: flex;
+  overflow-x: auto;
+}
+.inneravatarsrow img {
+  width: 150px;
+  height: 150px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: solid 3px transparent;
+  cursor: pointer;
+}
+.inneravatarsrow img:hover {
+  border: solid 3px #fff;
+}
+.inneravatarsrow::-webkit-scrollbar {
+  height: 0;
+}
+.avatarsrow h2 {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-weight: bolder;
+}
+.avatarsrow {
+  margin-top: 20px;
+}
+.favr {
+  margin-top: 40px;
+}
+.addbox {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  border-radius: 5px;
+}
+.addbox i {
+  color: #fff;
+  font-size: 24px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watching {
+  background-color: #141414;
+}
+@media (max-width: 1100px) {
+  .modalcont,
+  .avatarmodalcont,
+  .maintitle {
+    margin-top: 70px;
+  }
+  .avatarmodalcont {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    margin-top: 2rem;
+  }
+  .editprofilemodal h1 {
+    font-size: 30px;
+    margin-top: 1rem;
+  }
+  .innerprofilecont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .watching button,
+  .outline {
+    background-color: transparent;
+    border: solid 1px grey;
+    color: grey;
+    padding: 0.5rem 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    font-size: 0.7rem;
+    min-width: 80px;
+  }
+}
